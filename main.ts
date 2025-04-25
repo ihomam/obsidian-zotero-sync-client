@@ -65,6 +65,7 @@ interface ZoteroSyncClientSettings {
 
 const DEFAULT_SETTINGS: ZoteroSyncClientSettings = {
 	api_key: '',
+	user_id: '',
 	sync_on_startup: true,
 	sync_on_interval: false,
 	sync_interval: 0,
@@ -641,6 +642,7 @@ export default class ZoteroSyncClientPlugin extends Plugin {
 				return `<img${attrs} src="${fileUrl}">`;
 			}
 		});
+	}
 
 }
 
